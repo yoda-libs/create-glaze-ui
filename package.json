@@ -1,5 +1,5 @@
 {
-  "name": "@yoda/create-glaze-ui",
+  "name": "create-glaze-ui",
   "version": "0.1.0",
   "description": "A micro-frontend framework shell starter for glaze-ui.",
   "bin": "bin/cli.js",

@@ -13,7 +13,7 @@ const runCommand = command => {
 }
 
 const repoName = process.argv[2];
-const gitCheckoutCommand = `git clone --depth 1 https://github.com/jzucchetto/glaze-ui ${repoName}`;
+const gitCheckoutCommand = `git clone --depth 1 https://github.com/yoda-libs/create-glaze-ui ${repoName}`;
 const installDepsCommand = `cd ${repoName} && npm install -y`;
 
 console.log(`Cloning the repository with name ${repoName}`);
