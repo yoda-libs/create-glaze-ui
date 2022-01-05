@@ -11,9 +11,18 @@ import { createRoutes, route, createLayout } from 'glaze-ui';
 const apps = createApps([
     app('login', 'http://localhost:8081/login.js'),
     app('navbar', 'http://localhost:8083/navbar.js'),
+    
     app('content', 'http://localhost:9000/content.js'),
     app('sidebar', 'http://localhost:9000/sidebar.js'),
+    
+    // -------------------------------------------------------
+    // example on how to manually import an external glaze app
+    // -------------------------------------------------------
     // app('navbar', () => System.import('http://localhost:8083/navbar.js'))
+
+    // ---------------------------------------------
+    // example on how to manually render a glaze app
+    // ---------------------------------------------
     // app('navbar', {
     //     mount: (container) => {
     //         const div = <div>rendered navbar</div>;
@@ -24,16 +33,6 @@ const apps = createApps([
     //         container.removeChild(app)
     //     }
     // })
-    // app('navbar', () =>({
-    //     mount: (container) => {
-    //         const div = <div>rendered navbar</div>;
-    //         container.appendChild(div);
-    //         return div;
-    //     },
-    //     unmount: (container, app) => {
-    //         container.removeChild(app)
-    //     }
-    // }))
 ]);
 
 const layout = createLayout(
@@ -48,8 +47,8 @@ const layout = createLayout(
     </div>
 , {
     navbar: apps['navbar'],
-    // content: apps['content'],
-    // sidebar: apps['sidebar']
+    content: apps['content'],
+    sidebar: apps['sidebar']
 });
 
 const router = createRoutes([
@@ -65,10 +64,12 @@ bootstrap({
     sharedLibs: {
         'react': 'https://unpkg.com/react@17.0.2/umd/react.development.js',
         'react-dom': 'https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js',
-        // 'react-dom': 'https://unpkg.com/@hot-loader/react-dom@17.0.1/umd/react-dom.development.js',
     },
     options: { debug: true }
 }).then(async glaze => {
+    // example on how to mount a glaze app without a router
     // await apps['navbar'].mount(document.getElementById('root'));
-    setTimeout(() => glaze.dispatch({test: "message"}), 1000);
+
+    // example on how to send a message to a glaze app
+    glaze.dispatch({test: "message"});
 }).catch(console.error);
