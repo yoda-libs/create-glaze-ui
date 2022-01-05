@@ -1,7 +1,7 @@
 /** @jsx createElement */
-import { createElement } from '../../glaze-ui/dist';
-import { bootstrap, createApps, app } from '../../glaze-ui/dist/glaze';
-import { createRoutes, route, createLayout } from '../../glaze-ui/dist/router';
+import { createElement } from 'glaze-ui';
+import { bootstrap, createApps, app } from 'glaze-ui';
+import { createRoutes, route, createLayout } from 'glaze-ui';
 
 // run command below to create a react micro-frontend
 //
