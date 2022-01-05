@@ -2601,10 +2601,10 @@ get-symbol-description@^1.0.0:
     call-bind "^1.0.2"
     get-intrinsic "^1.1.1"
 
-glaze-ui@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/glaze-ui/-/glaze-ui-1.0.1.tgz#a1e80578da8571562c049292b5bba8859211deba"
-  integrity sha512-J/VlN3bnOEvdZNPMzXJOOIIn1/rJ0KvXh2eMjVGaIOEWb0Sls1DIYv68IsKt5vp6LTkHP8aTtxp1V/qaHH9/3Q==
+glaze-ui@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/glaze-ui/-/glaze-ui-1.0.2.tgz#87b5dd261b1081cd076cd856af8e724436cde2a9"
+  integrity sha512-sxxCBMpY3+Qrcc5tUJL461Q6vCn2VfKNkOKUQ2eLpH2EipK5DJmqpGcgQM1GGLhn1JwueVmid+j6g3zpL+h8Xw==
   dependencies:
     html5-history-router "^1.1.0"
 
@@ -3220,6 +3220,11 @@ json5@^2.1.2:
   integrity sha512-f+8cldu7X/y7RAJurMEJmdoKXGB/X550w2Nr3tTbezL6RwEE/iMcm+tZnXeoZtKuOq6ft8+CqzEkrIgx1fPoQA==
   dependencies:
     minimist "^1.2.5"
+
+json@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/json/-/json-11.0.0.tgz#2e84493134e2f42c131165aa22a124df38b3a3ee"
+  integrity sha512-N/ITv3Yw9Za8cGxuQqSqrq6RHnlaHWZkAFavcfpH/R52522c26EbihMxnY7A1chxfXJ4d+cEFIsyTgfi9GihrA==
 
 kind-of@^6.0.2:
   version "6.0.3"
