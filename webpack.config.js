@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.jsx',
     output: {
         path: path.resolve(__dirname, 'dist'), // output directory
@@ -24,7 +24,7 @@ module.exports = {
     devtool: 'source-map',
     devServer: {
         port: 9000,
-        hot: true,
+        hot: false,
         historyApiFallback: {
             rewrites: [{ from: /.*/, to: '/index.html' }],
         },
