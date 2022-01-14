@@ -6,5 +6,12 @@ This is part of the [Glaze UI framework](https://www.npmjs.com/package/glaze-ui)
 This is the template to create the shell application for [Glaze UI](https://www.npmjs.com/package/glaze-ui).
 <br/><br/>
 ## Command
+### `yarn`
 ```bash
 yarn create glaze-ui <name>
+```
+
+### `npx`
+```bash
+npx create-glaze-ui <name>
+```
